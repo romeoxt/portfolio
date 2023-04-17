@@ -210,16 +210,16 @@ import {
       source_code_link: "https://github.com/romeoxt/chatgpt-learn",
     },
     {
-      name: "Job IT",
+      name: "Scrolling Parallax",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A simple and lightweight React component that allows you to create a parallax effect on any element.",
       tags: [
         {
-          name: "react",
+          name: "parrallax",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "scrolling",
           color: "green-text-gradient",
         },
         {
@@ -228,7 +228,7 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/romeoxt/scrolling",
     },
     {
       name: "Trip Guide",
