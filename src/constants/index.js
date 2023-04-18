@@ -49,7 +49,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Fontend Developer",
+      title: "Frontend Developer",
       icon: backend,
     },
     {
