@@ -161,30 +161,30 @@ import {
   ];
   
   const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Herby proved me wrong.",
-      name: "Weezy",
-      designation: "Young Moolah",
-      company: "Young Money",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Lil_Wayne.jpg/1024px-Lil_Wayne.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Herby does.",
-      name: "Chris Brown",
-      designation: "Breezy",
-      company: "Lightskin crew",
-      image: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-08/220802-chris-brown-jm-1301-c21d47.jpg",
-    },
-    {
-      testimonial:
-        "After Fitzherbert optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "John Wick",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://www.indiewire.com/wp-content/uploads/2020/04/tilezoom.jpeg",
-    },
+    // {
+    //   testimonial:
+    //     "I thought it was impossible to make a website as beautiful as our product, but Herby proved me wrong.",
+    //   name: "Weezy",
+    //   designation: "Young Moolah",
+    //   company: "Young Money",
+    //   image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Lil_Wayne.jpg/1024px-Lil_Wayne.jpg",
+    // },
+    // {
+    //   testimonial:
+    //     "I've never met a web developer who truly cares about their clients' success like Herby does.",
+    //   name: "Chris Brown",
+    //   designation: "Breezy",
+    //   company: "Lightskin crew",
+    //   image: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-08/220802-chris-brown-jm-1301-c21d47.jpg",
+    // },
+    // {
+    //   testimonial:
+    //     "After Fitzherbert optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    //   name: "John Wick",
+    //   designation: "CTO",
+    //   company: "456 Enterprises",
+    //   image: "https://www.indiewire.com/wp-content/uploads/2020/04/tilezoom.jpeg",
+    // },
   ];
   
   const projects = [
