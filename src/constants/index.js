@@ -6,6 +6,7 @@ import {
     javascript,
     html,
     css,
+    docker,
     reactjs,
     redux,
     tailwind,
@@ -16,9 +17,12 @@ import {
     meta,
     starbucks,
     tesla,
+    silk,
     shopify,
     pixelpier,
     learngpt,
+    pitch,
+    wefogit,
     jobit,
     tripguide,
     threejs,
@@ -68,6 +72,10 @@ import {
       icon: css,
     },
     {
+      name: "Docker",
+      icon: docker,
+    },
+    {
       name: "JavaScript",
       icon: javascript,
     },
@@ -107,31 +115,32 @@ import {
   
   const experiences = [
     {
+      title: "Frontend Developer",
+      company_name: "Silk Worldwide LLC",
+      icon: silk,
+      iconBg: "#383E56",
+      date: "Sept 2023 - Present",
+      points: [
+        "Spearheaded the development and ongoing maintenance of the company's e-commerce website, employing HTML and CSS to create a responsive, user-friendly interface, enhancing the customer experience and facilitating seamless online transactions.",
+        "Collaborated closely with marketing and product teams to design and implement visually appealing web pages for new product launches and promotional campaigns, contributing significantly to increased web traffic and customer engagement.",
+        "Optimized website performance and accessibility by implementing advanced CSS techniques and Python scripts, ensuring fast load times, smooth navigation, and compliance with web accessibility standards, thus expanding the customer base.",
+        "Initiated and drove the development of an interactive Vue-based quiz application for customer engagement, enhancing user interaction and providing valuable insights into customer preferences and behavior.",
+        "Conducted extensive QA on the website’s frontend, analyzing data and user feedback to identify and troubleshoot issues, leading to improved user experience and a measurable reduction in customer-reported issues. Performed daily site health checks for broken links and site errors."
+      ],
+    },
+    {
       title: "UI/UX Developer",
       company_name: "Pixel Pier",
       icon: pixelpier,
       iconBg: "#383E56",
       date: "September 2020 - Feburary 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Spearheaded the design and implementation of user-friendly web applications, focusing on optimizing user engagement and satisfaction. Utilized React.js and other front-end technologies to build interactive interfaces that are both aesthetically pleasing and functional.",
+        "Worked closely with product managers, designers, and developers to ensure a seamless user experience from concept to deployment. Facilitated brainstorming sessions and workshops to define user flows and discuss design enhancements, ensuring that all stakeholder and user needs were met.",
+        "Conducted extensive user research and usability testing to gather insights and identify pain points in the user journey. Applied findings to refine designs and iteratively improve the products, significantly reducing user drop-off rates and increasing satisfaction metrics.",
+        "Led a team of junior developers and designers, providing guidance and mentorship in best practices for UX/UI development. Reviewed team contributions for adherence to design standards and code quality, fostering a culture of excellence and continuous improvement",
       ],
     },
-    // {
-    //   title: "React Native Developer",
-    //   company_name: "Tesla",
-    //   icon: tesla,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2021 - Feb 2022",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
     // {
     //   title: "Web Developer",
     //   company_name: "Shopify",
@@ -210,37 +219,33 @@ import {
       source_code_link: "https://github.com/romeoxt/chatgpt-learn",
     },
     {
-      name: "Scrolling Parallax",
+      name: "Product Demo Site",
       description:
-        "A simple and lightweight React component that allows you to create a parallax effect on any element.",
+        "Engineered an interactive website tailored for pitching new product ideas to investors, transforming the traditional pitch deck into a fully functional, web-based presentation platform",
       tags: [
         {
-          name: "parrallax",
+          name: "bootstrap",
           color: "blue-text-gradient",
         },
         {
-          name: "scrolling",
+          name: "javascript",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/romeoxt/scrolling",
+      image: pitch,
+      source_code_link: "http://socasite.s3-website.us-east-2.amazonaws.com/index.html",
     },
     {
-      name: "Trip Guide",
+      name: "We Fog It",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive website for a disinfecting company using BioProtect to Fog Mold, Mildew, Bacteria and Fungus.",
       tags: [
         {
-          name: "nextjs",
+          name: "wordpresss",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "jquery",
           color: "green-text-gradient",
         },
         {
@@ -248,8 +253,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: wefogit,
+      source_code_link: "https://wefogit.com/",
     },
   ];
   
