@@ -25,9 +25,11 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import pixelpier from "./company/pixelpier.png"
+import pixelpier from "./company/pixelpier.png";
+import silk from "./company/silk.png";
 
-
+import wefogit from "./wefogit.png"
+import pitch from "./pitch.png";
 import learngpt from "./learngpt.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -58,7 +60,10 @@ export {
   shopify,
   starbucks,
   tesla,
+  silk,
   pixelpier,
+  pitch,
+  wefogit,
   learngpt,
   jobit,
   tripguide,
