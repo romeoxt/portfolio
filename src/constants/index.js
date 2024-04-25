@@ -10,6 +10,8 @@ import {
     reactjs,
     redux,
     tailwind,
+    typescript,
+    vue,
     nodejs,
     mongodb,
     git,
@@ -111,6 +113,10 @@ import {
       name: "figma",
       icon: figma,
     },
+    {
+      name: "vue",
+      icon: vue,
+    },
   ];
   
   const experiences = [
@@ -121,11 +127,11 @@ import {
       iconBg: "#383E56",
       date: "Sept 2023 - Present",
       points: [
-        "Spearheaded the development and ongoing maintenance of the company's e-commerce website, employing HTML and CSS to create a responsive, user-friendly interface, enhancing the customer experience and facilitating seamless online transactions.",
-        "Collaborated closely with marketing and product teams to design and implement visually appealing web pages for new product launches and promotional campaigns, contributing significantly to increased web traffic and customer engagement.",
-        "Optimized website performance and accessibility by implementing advanced CSS techniques and Python scripts, ensuring fast load times, smooth navigation, and compliance with web accessibility standards, thus expanding the customer base.",
-        "Initiated and drove the development of an interactive Vue-based quiz application for customer engagement, enhancing user interaction and providing valuable insights into customer preferences and behavior.",
-        "Conducted extensive QA on the website’s frontend, analyzing data and user feedback to identify and troubleshoot issues, leading to improved user experience and a measurable reduction in customer-reported issues. Performed daily site health checks for broken links and site errors."
+        "Lead the continuous development of the company's e-commerce website, using HTML and CSS to craft responsive, user-friendly interfaces that streamline customer interactions and enhance the online shopping experience.",
+        "Collaborate closely with the marketing and product teams to design and implement targeted web pages and blogs that support new product launches and promotional campaigns.",
+        "Conducted daily web performance analysis using Google Analytics and SEMrush, identifying trends and anomalies to optimize user experience and search engine rankings.",
+        "Participated in revamp of marquee website using HTML, CSS, and JavaScript to make it easier to navigate and more visually appealing, which kept visitors engaged and more likely to return.",
+        "Engineered a Vue.js-based interactive product quiz to direct traffic to key products, enhancing customer engagement and contributing to a targeted increase in sales."
       ],
     },
     {
@@ -135,10 +141,11 @@ import {
       iconBg: "#383E56",
       date: "September 2020 - Feburary 2023",
       points: [
-        "Spearheaded the design and implementation of user-friendly web applications, focusing on optimizing user engagement and satisfaction. Utilized React.js and other front-end technologies to build interactive interfaces that are both aesthetically pleasing and functional.",
-        "Worked closely with product managers, designers, and developers to ensure a seamless user experience from concept to deployment. Facilitated brainstorming sessions and workshops to define user flows and discuss design enhancements, ensuring that all stakeholder and user needs were met.",
-        "Conducted extensive user research and usability testing to gather insights and identify pain points in the user journey. Applied findings to refine designs and iteratively improve the products, significantly reducing user drop-off rates and increasing satisfaction metrics.",
-        "Led a team of junior developers and designers, providing guidance and mentorship in best practices for UX/UI development. Reviewed team contributions for adherence to design standards and code quality, fostering a culture of excellence and continuous improvement",
+        "Implemented an inventory management system for an automotive dealership, enabling real-time inventory updates and search functionalities with AngularJS.",
+        "Built a comprehensive supply chain management dashboard using Vue.js, integrating with IoT devices to track real-time inventory and logistics data.",
+        "Developed an employee feedback and performance tracking system using Vue.js, streamlining feedback collection and reporting processes.",
+        "Developed a comprehensive financial analysis and reporting website for a fintech client using Python  and JavaScript. Integrated D3.js for dynamic data visualization, enhancing the interactivity and real-time data processing capabilities.",
+        "Developed a real-time order processing system using AWS Lambda and API Gateway. Integrated with external payment and inventory APIs via webhooks, automating order updates and inventory synchronization across platforms.",
       ],
     },
     // {
