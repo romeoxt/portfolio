@@ -47,7 +47,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-         I am a frontend developer with expertise in HTML, CSS, and JavaScript. I have worked with modern front-end frameworks and libraries like React, Angular, and three.js, and have experience with Git for version control and project management. I have a strong understanding of UI/UX principles and best practices, and am familiar with server-side technologies such as Node.js and Express. I am a skilled problem-solver and debugger, and write clean, maintainable code. I am comfortable working in agile environments and collaborating effectively with designers, developers, and stakeholders to deliver high-quality products on time and within budget.
+        I am a Full Stack Developer with expertise in building scalable web applications 
+        using JavaScript, Python, and modern frameworks like React, Angular, and Vue.js. 
+        My experience spans from developing robust backend systems with Django and Node.js 
+        to implementing complex frontend solutions using Three.js and D3.js. With a strong foundation in UI/UX principles 
+        and agile methodologies, I consistently deliver data-driven solutions that enhance 
+        user engagement and business metrics. I excel in collaborative environments, working 
+        closely to transform complex requirements into efficient, scalable applications. 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
