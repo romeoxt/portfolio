@@ -5,18 +5,36 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Chessboard = ({ isMobile }) => {
-  const chessboard = useGLTF("./chessboard/scene.gltf");
+  const chessboard = useGLTF(`${import.meta.env.BASE_URL}chessboard/scene.gltf`);
+
+  useEffect(() => {
+    // Debug info for mobile
+    if (isMobile) {
+      const debugDiv = document.createElement('div');
+      debugDiv.style.position = 'fixed';
+      debugDiv.style.top = '10px';
+      debugDiv.style.left = '10px';
+      debugDiv.style.backgroundColor = 'rgba(0,0,0,0.7)';
+      debugDiv.style.color = 'white';
+      debugDiv.style.padding = '10px';
+      debugDiv.style.zIndex = '9999';
+      debugDiv.textContent = `Screen: ${window.innerWidth}x${window.innerHeight}, DPR: ${window.devicePixelRatio}`;
+      document.body.appendChild(debugDiv);
+      
+      return () => document.body.removeChild(debugDiv);
+    }
+  }, [isMobile]);
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={isMobile ? 0.1 : 0.15} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        intensity={isMobile ? 0.8 : 1}
+        castShadow={!isMobile}
+        shadow-mapSize={isMobile ? 512 : 1024}
       />
       <pointLight intensity={1} />
       <primitive
