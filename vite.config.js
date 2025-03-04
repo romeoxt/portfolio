@@ -5,4 +5,12 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/portfolio/',
+  build: {
+    assetsInlineLimit: 0, // Ensures all assets are processed as files
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
