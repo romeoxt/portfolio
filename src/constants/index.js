@@ -28,7 +28,11 @@ import {
     jobit,
     tripguide,
     threejs,
+    signalboosters
   } from "../assets";
+  
+  import celltower from "../assets/celltower.png";
+  import photographer from "../assets/photographer.png";
   
   export const navLinks = [
     {
@@ -266,6 +270,69 @@ import {
       ],
       image: wefogit,
       source_code_link: "https://wefogit.com/",
+    },
+    {
+      name: "Cell Tower Finder",
+      description:
+        "An interactive map application that helps users locate nearby cellular towers. Built with Mapbox GL JS, this tool allows users to search for their location and visualize 4G/5G towers from major carriers, helping them optimize signal reception.",
+      tags: [
+        {
+          name: "mapbox",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "geolocation",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: celltower,
+      source_code_link: "https://www.wilsonamplifiers.com/blog/finding-cell-tower-locations-the-complete-guide/",
+    },
+    {
+      name: "Madison Photography Portfolio",
+      description:
+        "A professional photography portfolio website showcasing portrait, wedding, event, and commercial photography services. Features responsive galleries, service packages, and a streamlined contact system for client inquiries.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "responsive",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: photographer,
+      source_code_link: "https://madi.photography/",
+    },
+    {
+      name: "SignalBoosters",
+      description:
+        "A comprehensive e-commerce website for cell phone signal boosters and WiFi solutions. Features product finders, detailed category navigation, and specialized solutions for homes, vehicles, offices, and commercial spaces.",
+      tags: [
+        {
+          name: "e-commerce",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "telecommunications",
+          color: "green-text-gradient",
+        },
+        {
+          name: "user experience",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: signalboosters,
+      source_code_link: "https://www.signalboosters.com/",
     },
   ];
   
