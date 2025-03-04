@@ -54,14 +54,14 @@ const BallCanvas = ({ icon }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if mobile
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    // Check if mobile or small tablet
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsMobile(mediaQuery.matches);
-
+    
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-
+    
     mediaQuery.addEventListener("change", handleMediaQueryChange);
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);

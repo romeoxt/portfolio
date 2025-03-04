@@ -33,20 +33,20 @@ const ChessCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
+    // Increase the breakpoint to 768px (typical tablet width)
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
-
+    
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-
+    
     // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
+    
     // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
@@ -81,8 +81,8 @@ const ChessCanvas = () => {
   );
 };
 
-// Only preload on desktop
-if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia("(min-width: 501px)").matches) {
+// Only preload on larger screens
+if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia("(min-width: 769px)").matches) {
   useGLTF.preload(`${import.meta.env.BASE_URL}chessboard/scene.gltf`);
 }
 
