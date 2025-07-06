@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../style";
@@ -8,26 +8,28 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt 
+    className='xs:w-[250px] w-full'
+    tiltMaxAngleX={45}
+    tiltMaxAngleY={45}
+    scale={1}
+    transitionSpeed={450}
+    tiltReverse={true}
+  >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-6 sm:px-12 min-h-[260px] sm:min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-12 h-12 sm:w-16 sm:h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[18px] sm:text-[20px] font-bold text-center leading-tight'>
           {title}
         </h3>
       </div>
@@ -45,18 +47,12 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[16px] sm:text-[17px] max-w-3xl leading-[28px] sm:leading-[30px]'
       >
-        I am a Full Stack Developer with expertise in building scalable web applications 
-        using JavaScript, Python, and modern frameworks like React, Angular, and Vue.js. 
-        My experience spans from developing robust backend systems with Django and Node.js 
-        to implementing complex frontend solutions using Three.js and D3.js. With a strong foundation in UI/UX principles 
-        and agile methodologies, I consistently deliver data-driven solutions that enhance 
-        user engagement and business metrics. I excel in collaborative environments, working 
-        closely to transform complex requirements into efficient, scalable applications. 
+        I'm a Full Stack Developer with over six years of experience building scalable, data-driven web applications across industries like e-commerce, fintech, IoT, and healthcare. I specialize in React, Next.js, Node.js, and Python, with hands-on expertise in cloud services (AWS), geospatial visualization (Mapbox), and intelligent automation using LLMs and tools like n8n. My background in biotechnology deepens my interest in health-focused innovation, and I thrive in collaborative, remote environments where performance, clean architecture, and user experience are top priorities.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap justify-center gap-6 sm:gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

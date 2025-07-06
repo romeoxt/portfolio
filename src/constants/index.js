@@ -32,7 +32,7 @@ import {
   } from "../assets";
   
   import celltower from "../assets/celltower.png";
-  import photographer from "../assets/photographer.png";
+  import briefly from "../assets/briefly.png";
   
   export const navLinks = [
     {
@@ -55,20 +55,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Frontend Engineer",
+      icon: reactjs,
     },
     {
-      title: "Frontend Developer",
-      icon: backend,
-    },
-    {
-      title: "Web Designer",
+      title: "AI & Automation Developer",
       icon: creator,
+    },
+    {
+      title: "Cloud & API Specialist",
+      icon: backend,
     },
   ];
   
@@ -137,7 +137,7 @@ import {
       points: [
         "Led development of global e-commerce platform, achieving 25% increase in sales through optimized user experience and performance improvements.",
         "Implemented responsive design and navigation enhancements, resulting in 40,000 additional monthly mobile users and 15% lower bounce rate.",
-        "Developed and integrated Mapbox API for cell tower location visualization, enhancing network coverage analysis capabilities.",
+        "Developed and integrated Mapbox GL JS tool for real-time cell tower location visualization, enhancing network coverage analysis capabilities.",
         "Executed comprehensive SEO optimization strategy, achieving top 5 Google rankings for key pages and driving 10,000+ monthly organic visitors.",
         "Created engaging web pages and blogs for product launches, attracting 25,000+ new visitors during release periods."
       ],
@@ -147,13 +147,13 @@ import {
       company_name: "Pixel Pier",
       icon: pixelpier,
       iconBg: "#383E56",
-      date: "September 2020 - February 2023",
+      date: "September 2020 - Feb 2023",
       points: [
         "Spearheaded UI/UX development initiatives across IoT, Fintech, and E-commerce projects, delivering innovative solutions for diverse client needs.",
         "Engineered an Angular-based inventory management system for automotive clients, streamlining parts tracking and reducing inventory loss.",
         "Developed Vue.js employee feedback system, reducing report generation time by 40% and improving engagement metrics by 15%.",
         "Built financial analysis platform using Python, JavaScript, and D3.js, enabling dynamic data visualization and real-time analysis.",
-        "Implemented real-time order processing system with AWS Lambda and API Gateway, achieving 30% faster processing and 70% fewer sync errors."
+        "Implemented real-time order processing system using AWS Lambda and API Gateway, achieving 30% faster processing and 70% fewer sync errors."
       ],
     },
     // {
@@ -256,7 +256,7 @@ import {
         "A comprehensive website for a disinfecting company using BioProtect to Fog Mold, Mildew, Bacteria and Fungus.",
       tags: [
         {
-          name: "wordpresss",
+          name: "wordpress",
           color: "blue-text-gradient",
         },
         {
@@ -293,25 +293,25 @@ import {
       source_code_link: "https://www.wilsonamplifiers.com/blog/finding-cell-tower-locations-the-complete-guide/",
     },
     {
-      name: "Madison Photography Portfolio",
+      name: "Briefly - AI Meeting Briefs",
       description:
-        "A professional photography portfolio website showcasing portrait, wedding, event, and commercial photography services. Features responsive galleries, service packages, and a streamlined contact system for client inquiries.",
+        "An AI-powered meeting brief service that transforms email threads into clear, actionable summaries. Features intelligent analysis of multiple email threads, extraction of key decisions and action items, and automated generation of comprehensive meeting briefs.",
       tags: [
         {
-          name: "react",
+          name: "AI",
           color: "blue-text-gradient",
         },
         {
-          name: "responsive",
+          name: "email-processing",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "automation",
           color: "pink-text-gradient",
         },
       ],
-      image: photographer,
-      source_code_link: "https://madi.photography/",
+      image: briefly,
+      source_code_link: "https://www.briefed.dev/",
     },
     {
       name: "SignalBoosters",
@@ -430,12 +430,23 @@ import {
   const professionalSummary = {
     title: "Professional Summary",
     points: [
-      "4+ years of experience in full-stack development",
-      "Expertise in building scalable web applications",
-      "Strong background in UI/UX development",
-      "Track record of improving application performance",
-      "Experience with agile methodologies and team leadership"
+      "6+ years of experience in full-stack development",
+      "Proven success in building scalable, secure web platforms",
+      "Strong focus on UI/UX, performance optimization, and accessibility",
+      "Experience in AI integration, automation, and cloud infrastructure",
+      "Skilled in agile methodologies and cross-functional collaboration"
     ]
+  };
+
+
+
+  const socialLinks = {
+    github: [
+      { username: "romeoxt", url: "https://github.com/romeoxt" },
+      { username: "flegall100", url: "https://github.com/flegall100" }
+    ],
+    linkedin: { username: "flegall100", url: "https://linkedin.com/in/flegall100" },
+    twitter: { username: "", url: "" } // Add if needed
   };
   
   export { 
@@ -446,6 +457,7 @@ import {
     projects, 
     skills, 
     certifications,
-    professionalSummary
+    professionalSummary,
+    socialLinks
   };
   
