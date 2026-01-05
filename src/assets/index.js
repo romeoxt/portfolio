@@ -37,6 +37,12 @@ import pitch from "./pitch.png";
 import learngpt from "./learngpt.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import versaCreative from "./versa_creative_group_logo.png";
+import wallisbank from "./wallisbank.png";
+import satpon from "./satpon.jpg";
+import versaCreativeSite from "./versa-creative.jpg";
+import geospace from "./geospace.jpg";
+import tagHouston from "./tag-houston.jpg";
 
 export {
   logo,
@@ -71,6 +77,12 @@ export {
   learngpt,
   jobit,
   tripguide,
+  versaCreative,
+  wallisbank,
+  satpon,
+  versaCreativeSite,
+  geospace,
+  tagHouston,
   vue,
   celltower,
   photographer,

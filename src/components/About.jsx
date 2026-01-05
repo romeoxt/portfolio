@@ -10,11 +10,13 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt 
     className='xs:w-[250px] w-full'
-    tiltMaxAngleX={45}
-    tiltMaxAngleY={45}
-    scale={1}
-    transitionSpeed={450}
-    tiltReverse={true}
+    tiltMaxAngleX={8}
+    tiltMaxAngleY={8}
+    perspective={1200}
+    scale={1.01}
+    transitionSpeed={250}
+    tiltReverse={false}
+    gyroscope={false}
   >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -49,7 +51,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[16px] sm:text-[17px] max-w-3xl leading-[28px] sm:leading-[30px]'
       >
-        I'm a Full Stack Developer with over six years of experience building scalable, data-driven web applications across industries like e-commerce, fintech, IoT, and healthcare. I specialize in React, Next.js, Node.js, and Python, with hands-on expertise in cloud services (AWS), geospatial visualization (Mapbox), and intelligent automation using LLMs and tools like n8n. My background in biotechnology deepens my interest in health-focused innovation, and I thrive in collaborative, remote environments where performance, clean architecture, and user experience are top priorities.
+        I’m a Full Stack Software Developer with 6+ years of experience building scalable, data-driven web applications across e-commerce, fintech, IoT, and healthcare. I specialize in JavaScript, React, Next.js, Node.js, and Python, developing front-end interfaces, RESTful APIs, and backend services with a focus on performance, scalability, and maintainability.
+        <br /><br />
+        I have hands-on experience with AWS cloud services, serverless and containerized deployments, geospatial data visualization using Mapbox, and workflow automation using LLMs, OpenAI APIs, and n8n. With a background in biotechnology, I’m particularly interested in health tech, clinical data platforms, and data-intensive applications. I thrive in remote, collaborative environments that value clean architecture, code quality, and user-centered design.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap justify-center gap-6 sm:gap-10'>

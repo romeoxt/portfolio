@@ -19,23 +19,25 @@ const ProjectCard = ({
   const isGithubRepo = source_code_link.includes('github.com');
   
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="h-full will-change-transform">
       <Tilt
-        tiltMaxAngleX={45}
-        tiltMaxAngleY={45}
-        scale={1}
-        transitionSpeed={450}
-        tiltReverse={true}
-        className="bg-tertiary p-4 sm:p-5 rounded-2xl sm:w-[360px] w-full max-w-[320px] sm:max-w-none"
+        tiltMaxAngleX={8}
+        tiltMaxAngleY={8}
+        perspective={1200}
+        scale={1.01}
+        transitionSpeed={250}
+        tiltReverse={false}
+        gyroscope={false}
+        className="bg-tertiary p-4 sm:p-5 rounded-2xl sm:w-[360px] w-full max-w-[320px] sm:max-w-none flex flex-col h-full min-h-[520px] overflow-hidden"
       >
         <div 
-          className={`w-full h-full ${!isGithubRepo ? 'cursor-pointer' : ''}`}
+          className={`w-full h-full flex flex-col ${!isGithubRepo ? 'cursor-pointer' : ''}`}
           onClick={!isGithubRepo ? () => window.open(source_code_link, "_blank") : undefined}
         >
         <div className='relative w-full h-[200px] sm:h-[230px]'>
           <img
             src={image}
-            alt='project_image'
+            alt={`${name} screenshot`}
             className='w-full h-full object-cover rounded-2xl'
           />
 
@@ -55,12 +57,17 @@ const ProjectCard = ({
           )}
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[20px] sm:text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[13px] sm:text-[14px] leading-[20px] sm:leading-[22px]'>{description}</p>
-        </div>
+        <div className='mt-5 flex-1 flex flex-col gap-4'>
+          <div>
+            <h3 className='text-white font-bold text-[20px] sm:text-[22px] leading-[28px] sm:leading-[30px] min-h-[56px]'>
+              {name}
+            </h3>
+            <p className='mt-2 text-secondary text-[13px] sm:text-[14px] leading-[20px] sm:leading-[22px] min-h-[72px]'>
+              {description}
+            </p>
+          </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -69,6 +76,20 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
+        </div>
+        <div className='flex justify-end'>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(source_code_link, "_blank");
+            }}
+            className="flex items-center gap-1 text-sm font-semibold text-[#a78bfa] hover:text-white transition"
+          >
+            {isGithubRepo ? "View repo" : "View site"}
+            <span aria-hidden="true" className="text-[12px]">↗</span>
+          </button>
+        </div>
         </div>
         </div>
       </Tilt>
@@ -93,7 +114,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap justify-center gap-5 sm:gap-7'>
+      <div className='mt-20 flex flex-wrap justify-center gap-5 sm:gap-7 items-stretch'>
         {projects.slice().reverse().map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

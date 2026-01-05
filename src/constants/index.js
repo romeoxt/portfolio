@@ -28,7 +28,13 @@ import {
     jobit,
     tripguide,
     threejs,
-    signalboosters
+    signalboosters,
+    versaCreative,
+    wallisbank,
+    satpon,
+    versaCreativeSite,
+    geospace,
+    tagHouston
   } from "../assets";
   
   import celltower from "../assets/celltower.png";
@@ -129,11 +135,24 @@ import {
   
   const experiences = [
     {
+      title: "Web Developer",
+      company_name: "Versa Creative",
+      icon: versaCreative,
+      iconBg: "#383E56",
+      date: "Oct 2025 - Present",
+      points: [
+        "Manage and build client sites on WordPress ecosystems using Webflow, Divi, and Elementor.",
+        "Ship responsive landing pages and campaign microsites with performance-first setups, including lazy loading and optimized media; typical Lighthouse perf scores land at 90+.",
+        "Maintain and extend theme configurations, custom CSS/JS, and plugin stacks to keep multi-brand experiences consistent, accessible, and easy to update",
+        "Coordinate content updates and QA with design and marketing stakeholders to deliver pixel-accurate releases on schedule; routinely turn around 5–8 pages per sprint."
+      ],
+    },
+    {
       title: "Frontend Developer",
       company_name: "Silk Worldwide LLC",
       icon: silk,
       iconBg: "#383E56",
-      date: "Sept 2023 - Present",
+      date: "Sept 2023 - Oct 2025",
       points: [
         "Led development of global e-commerce platform, achieving 25% increase in sales through optimized user experience and performance improvements.",
         "Implemented responsive design and navigation enhancements, resulting in 40,000 additional monthly mobile users and 15% lower bounce rate.",
@@ -215,7 +234,7 @@ import {
     {
       name: "GPTLearn",
       description:
-        "An engaging and interactive web application designed to help users master the art of AI prompt engineering. Through the platform, users can access a diverse array of examples, enabling them to practice their skills, test their understanding of crucial concepts, and receive valuable feedback.",
+        "I built an interactive app that helps people practice prompt engineering with hands-on examples, exercises, and feedback.",
       tags: [
         {
           name: "react",
@@ -236,7 +255,7 @@ import {
     {
       name: "Cellular Path",
       description:
-        "Engineered an interactive website tailored for pitching new product ideas to investors, transforming the traditional pitch deck into a fully functional, web-based presentation platform",
+        "I turned a pitch deck into a web-first investor experience, guiding new product ideas through an interactive story.",
       tags: [
         {
           name: "bootstrap",
@@ -253,7 +272,7 @@ import {
     {
       name: "We Fog It",
       description:
-        "A comprehensive website for a disinfecting company using BioProtect to Fog Mold, Mildew, Bacteria and Fungus.",
+        "I launched a WordPress site for a disinfecting company with clear service messaging and conversion-focused layouts.",
       tags: [
         {
           name: "wordpress",
@@ -274,7 +293,7 @@ import {
     {
       name: "Cell Tower Finder",
       description:
-        "An interactive map application that helps users locate nearby cellular towers. Built with Mapbox GL JS, this tool allows users to search for their location and visualize 4G/5G towers from major carriers, helping them optimize signal reception.",
+        "I built a Mapbox GL JS map that lets users locate nearby 4G/5G towers and optimize reception with a simple search.",
       tags: [
         {
           name: "mapbox",
@@ -293,9 +312,9 @@ import {
       source_code_link: "https://www.wilsonamplifiers.com/blog/finding-cell-tower-locations-the-complete-guide/",
     },
     {
-      name: "Briefly - AI Meeting Briefs",
+      name: "Briefly AI Meeting Briefs",
       description:
-        "An AI-powered meeting brief service that transforms email threads into clear, actionable summaries. Features intelligent analysis of multiple email threads, extraction of key decisions and action items, and automated generation of comprehensive meeting briefs.",
+        "I built an AI meeting brief service that turns email threads into concise decisions and action items automatically.",
       tags: [
         {
           name: "AI",
@@ -316,7 +335,7 @@ import {
     {
       name: "SignalBoosters",
       description:
-        "A comprehensive e-commerce website for cell phone signal boosters and WiFi solutions. Features product finders, detailed category navigation, and specialized solutions for homes, vehicles, offices, and commercial spaces.",
+        "I led the UX and ecommerce build for signal boosters, adding product finders, rich category navigation, and tailored solutions for homes, vehicles, offices, and commercial spaces.",
       tags: [
         {
           name: "e-commerce",
@@ -333,6 +352,66 @@ import {
       ],
       image: signalboosters,
       source_code_link: "https://www.signalboosters.com/",
+    },
+    {
+      name: "Wallis Bank",
+      description:
+        "I refreshed the banking site with responsive layouts, clear product pathways, and compliance-friendly blocks that keep pages easy to update.",
+      tags: [
+        { name: "wordpress", color: "blue-text-gradient" },
+        { name: "divi", color: "green-text-gradient" },
+        { name: "accessibility", color: "pink-text-gradient" },
+      ],
+      image: wallisbank,
+      source_code_link: "https://wallisbank.com/",
+    },
+    {
+      name: "Satterfield & Pontikes (S&P)",
+      description:
+        "I built a portfolio-first experience for S&P that highlights each market sector with fast media, intuitive navigation, and structured case study templates.",
+      tags: [
+        { name: "webflow", color: "blue-text-gradient" },
+        { name: "seo", color: "green-text-gradient" },
+        { name: "performance", color: "pink-text-gradient" },
+      ],
+      image: satpon,
+      source_code_link: "https://satpon.com/",
+    },
+    {
+      name: "Versa Creative",
+      description:
+        "I ship landing pages and site refinements that align web, creative, and digital marketing offerings with fast-loading Divi builds and consistent brand components.",
+      tags: [
+        { name: "divi", color: "blue-text-gradient" },
+        { name: "wordpress", color: "green-text-gradient" },
+        { name: "performance", color: "pink-text-gradient" },
+      ],
+      image: versaCreativeSite,
+      source_code_link: "https://versacreative.com/",
+    },
+    {
+      name: "Geospace Technologies",
+      description:
+        "I produced a technical catalog for geophysical products with structured navigation and optimized imagery to keep complex content clear.",
+      tags: [
+        { name: "wordpress", color: "blue-text-gradient" },
+        { name: "elementor", color: "green-text-gradient" },
+        { name: "b2b", color: "pink-text-gradient" },
+      ],
+      image: geospace,
+      source_code_link: "https://www.geospace.com/",
+    },
+    {
+      name: "Texas Association of Governments (TAG Houston)",
+      description:
+        "I maintain an event and membership site with modular blocks that spotlight sponsors, programs, and frequent content updates.",
+      tags: [
+        { name: "wordpress", color: "blue-text-gradient" },
+        { name: "backbone", color: "green-text-gradient" },
+        { name: "content-updates", color: "pink-text-gradient" },
+      ],
+      image: tagHouston,
+      source_code_link: "https://taghouston.org/",
     },
   ];
   
