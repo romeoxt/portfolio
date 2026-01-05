@@ -1,5 +1,4 @@
 import React , { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { styles } from '../style';
 import { navLinks, socialLinks } from '../constants';
@@ -11,23 +10,16 @@ const Navbar = () => {
 
   return (
     <nav
-    className={'${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary'}
+    className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-        to="/"
-        className="flex items-center gap-2"
-        onClick={() => {
-          setActive("");
-          window.scrollTo(0, 0);
-        }}
-        >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex items-center gap-2">
+        <div className="flex items-center gap-2 select-none whitespace-nowrap">
+          <p className="text-white text-[16px] sm:text-[18px] font-bold flex items-center gap-2 leading-tight">
             <span>Fitzherbert</span>
             <span className="text-secondary font-semibold">| Developer</span>
           </p>
-        </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10 items-center'>
+        </div>
+        <ul className='list-none hidden md:flex flex-row gap-10 items-center'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -71,7 +63,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
           src={toggle ? close : menu}
           alt="menu"

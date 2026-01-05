@@ -12,12 +12,13 @@ import CanvasLoader from "../Loader";
 
 // Simple 2D fallback for mobile
 const MobileBallFallback = ({ imgUrl }) => {
+  const isThree = imgUrl && imgUrl.includes("threejs");
   return (
     <div className="flex justify-center items-center w-28 h-28">
       <img 
         src={imgUrl} 
         alt="tech" 
-        className="w-16 h-16 object-contain"
+        className={`w-16 h-16 object-contain ${isThree ? "invert" : ""}`}
       />
     </div>
   );
