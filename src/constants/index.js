@@ -267,7 +267,7 @@ import {
         },
       ],
       image: pitch,
-      source_code_link: "http://socasite.s3-website.us-east-2.amazonaws.com/index.html",
+      source_code_link: "https://cellularpath.com/",
     },
     {
       name: "We Fog It",

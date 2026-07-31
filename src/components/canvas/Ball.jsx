@@ -53,6 +53,8 @@ const Ball = ({ imgUrl }) => {
 
 const BallCanvas = ({ icon }) => {
   const [isMobile, setIsMobile] = useState(false);
+  // WebGL cannot reliably upload SVG as a texture (texSubImage2D: bad image data)
+  const isSvgIcon = typeof icon === "string" && icon.includes(".svg");
 
   useEffect(() => {
     // Check if mobile or small tablet
@@ -69,16 +71,16 @@ const BallCanvas = ({ icon }) => {
     };
   }, []);
 
-  // Use 2D fallback on mobile
-  if (isMobile) {
+  // Use 2D fallback on mobile, or for SVG icons that WebGL can't texture
+  if (isMobile || isSvgIcon) {
     return <MobileBallFallback imgUrl={icon} />;
   }
 
   return (
     <Canvas
-      frameloop='always'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+      frameloop='demand'
+      dpr={[1, 1.5]}
+      gl={{ preserveDrawingBuffer: true, powerPreference: "high-performance" }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
