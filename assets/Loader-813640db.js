@@ -1,0 +1,1 @@
+import{e as a,a as s,H as e,j as r}from"./three-aa406b08.js";const n=()=>{const{progress:o}=a();return s(e,{children:[r("span",{className:"canvas-load"}),s("p",{style:{fontSize:14,color:"#f1f1f1",fontWeight:700,marginTop:40},children:[o.toFixed(2),"%"]})]})};export{n as L};
