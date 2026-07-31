@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import backend from "./backend.webp";
+import creator from "./creator.webp";
+import mobile from "./mobile.webp";
+import web from "./web.webp";
+import github from "./github.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -20,10 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
-import vue from "./tech/vue.png";
-import celltower from "./celltower.png";
-import photographer from "./photographer.png";
-import signalboosters from "./signalboosters.png";
+import vue from "./tech/vue.webp";
+import celltower from "./celltower.webp";
+import photographer from "./photographer.webp";
+import signalboosters from "./signalboosters.webp";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -32,17 +32,17 @@ import tesla from "./company/tesla.png";
 import pixelpier from "./company/pixelpier.png";
 import silk from "./company/silk.png";
 
-import wefogit from "./wefogit.png"
-import pitch from "./pitch.png";
-import learngpt from "./learngpt.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ztcorporate from "./ztcorporate.webp";
+import pitch from "./pitch.webp";
+import learngpt from "./learngpt.webp";
+import jobit from "./jobit.webp";
+import tripguide from "./tripguide.webp";
 import versaCreative from "./versa_creative_group_logo.png";
-import wallisbank from "./wallisbank.png";
-import satpon from "./satpon.jpg";
-import versaCreativeSite from "./versa-creative.jpg";
-import geospace from "./geospace.jpg";
-import tagHouston from "./tag-houston.jpg";
+import wallisbank from "./wallisbank.webp";
+import satpon from "./satpon.webp";
+import versaCreativeSite from "./versa-creative.webp";
+import geospace from "./geospace.webp";
+import tagHouston from "./tag-houston.webp";
 
 export {
   logo,
@@ -73,7 +73,7 @@ export {
   silk,
   pixelpier,
   pitch,
-  wefogit,
+  ztcorporate,
   learngpt,
   jobit,
   tripguide,

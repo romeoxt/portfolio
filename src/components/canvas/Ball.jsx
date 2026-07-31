@@ -78,7 +78,7 @@ const BallCanvas = ({ icon }) => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       dpr={[1, 1.5]}
       gl={{ preserveDrawingBuffer: true, powerPreference: "high-performance" }}
     >

@@ -9,10 +9,24 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     base,
     build: {
-      assetsInlineLimit: 0, // Ensures all assets are processed as files
+      assetsInlineLimit: 0,
+      chunkSizeWarningLimit: 700,
       rollupOptions: {
         output: {
-          manualChunks: undefined,
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              if (id.includes('three') || id.includes('@react-three')) {
+                return 'three';
+              }
+              if (id.includes('framer-motion')) {
+                return 'motion';
+              }
+              if (id.includes('maath')) {
+                return 'maath';
+              }
+              return 'vendor';
+            }
+          },
         },
       },
     },

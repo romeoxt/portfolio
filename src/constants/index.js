@@ -24,7 +24,7 @@ import {
     pixelpier,
     learngpt,
     pitch,
-    wefogit,
+    ztcorporate,
     jobit,
     tripguide,
     threejs,
@@ -37,8 +37,8 @@ import {
     tagHouston
   } from "../assets";
   
-  import celltower from "../assets/celltower.png";
-  import briefly from "../assets/briefly.png";
+  import celltower from "../assets/celltower.webp";
+  import briefly from "../assets/briefly.webp";
   
   export const navLinks = [
     {
@@ -234,7 +234,7 @@ import {
     {
       name: "GPTLearn",
       description:
-        "I built an interactive app that helps people practice prompt engineering with hands-on examples, exercises, and feedback.",
+        "Built an interactive prompt-engineering trainer with live exercises and feedback so learners practice faster, cutting the guesswork out of ChatGPT workflows.",
       tags: [
         {
           name: "react",
@@ -255,7 +255,7 @@ import {
     {
       name: "Cellular Path",
       description:
-        "I turned a pitch deck into a web-first investor experience, guiding new product ideas through an interactive story.",
+        "Turned a pitch deck into a live investor-facing product site that walks buyers from problem to SOCA solution, tightening the path from interest to contact.",
       tags: [
         {
           name: "bootstrap",
@@ -270,16 +270,16 @@ import {
       source_code_link: "https://cellularpath.com/",
     },
     {
-      name: "We Fog It",
+      name: "ZT Corporate",
       description:
-        "I launched a WordPress site for a disinfecting company with clear service messaging and conversion-focused layouts.",
+        "Launched a Houston PE firm’s corporate site that surfaces $1B+ portfolio signal, team, and investor content, making the firm’s story scannable in one viewport.",
       tags: [
         {
           name: "wordpress",
           color: "blue-text-gradient",
         },
         {
-          name: "jquery",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
@@ -287,13 +287,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: wefogit,
-      source_code_link: "https://wefogit.com/",
+      image: ztcorporate,
+      source_code_link: "https://ztcorporate.com/",
     },
     {
       name: "Cell Tower Finder",
       description:
-        "I built a Mapbox GL JS map that lets users locate nearby 4G/5G towers and optimize reception with a simple search.",
+        "Shipped a Mapbox GL tool so shoppers locate nearby 4G/5G towers before buying boosters, removing guesswork from coverage decisions on high-intent pages.",
       tags: [
         {
           name: "mapbox",
@@ -314,7 +314,7 @@ import {
     {
       name: "Briefly AI Meeting Briefs",
       description:
-        "I built an AI meeting brief service that turns email threads into concise decisions and action items automatically.",
+        "Built an AI brief service that turns long email threads into decisions and action items, saving teams the time they’d burn re-reading the same chains.",
       tags: [
         {
           name: "AI",
@@ -335,7 +335,7 @@ import {
     {
       name: "SignalBoosters",
       description:
-        "I led the UX and ecommerce build for signal boosters, adding product finders, rich category navigation, and tailored solutions for homes, vehicles, offices, and commercial spaces.",
+        "Led UX and ecommerce for signalboosters.com with product finders and clearer category paths, helping drive ~25% sales lift, +40k monthly mobile users, and ~15% lower bounce.",
       tags: [
         {
           name: "e-commerce",
@@ -356,7 +356,7 @@ import {
     {
       name: "Wallis Bank",
       description:
-        "I refreshed the banking site with responsive layouts, clear product pathways, and compliance-friendly blocks that keep pages easy to update.",
+        "Refreshed the banking site with responsive product pathways and compliance-friendly blocks so marketing can ship updates without breaking regulated layouts.",
       tags: [
         { name: "wordpress", color: "blue-text-gradient" },
         { name: "divi", color: "green-text-gradient" },
@@ -368,9 +368,9 @@ import {
     {
       name: "Satterfield & Pontikes (S&P)",
       description:
-        "I built a portfolio-first experience for S&P that highlights each market sector with fast media, intuitive navigation, and structured case study templates.",
+        "Built a portfolio-first experience that highlights each market sector with fast media and reusable case-study templates so new wins publish without redesign work.",
       tags: [
-        { name: "webflow", color: "blue-text-gradient" },
+        { name: "wordpress", color: "blue-text-gradient" },
         { name: "seo", color: "green-text-gradient" },
         { name: "performance", color: "pink-text-gradient" },
       ],
@@ -380,7 +380,7 @@ import {
     {
       name: "Versa Creative",
       description:
-        "I ship landing pages and site refinements that align web, creative, and digital marketing offerings with fast-loading Divi builds and consistent brand components.",
+        "Ship landing pages and site refinements on Divi with performance-first media, routinely 5-8 pages per sprint at Lighthouse 90+ while keeping multi-brand components consistent.",
       tags: [
         { name: "divi", color: "blue-text-gradient" },
         { name: "wordpress", color: "green-text-gradient" },
@@ -392,7 +392,7 @@ import {
     {
       name: "Geospace Technologies",
       description:
-        "I produced a technical catalog for geophysical products with structured navigation and optimized imagery to keep complex content clear.",
+        "Produced a technical product catalog with structured navigation and optimized imagery so complex geophysical SKUs stay clear for B2B buyers scanning dense specs.",
       tags: [
         { name: "wordpress", color: "blue-text-gradient" },
         { name: "elementor", color: "green-text-gradient" },
@@ -404,7 +404,7 @@ import {
     {
       name: "Texas Association of Governments (TAG Houston)",
       description:
-        "I maintain an event and membership site with modular blocks that spotlight sponsors, programs, and frequent content updates.",
+        "Maintain an event and membership site with modular sponsor/program blocks so frequent content updates land without breaking the live schedule or layouts.",
       tags: [
         { name: "wordpress", color: "blue-text-gradient" },
         { name: "backbone", color: "green-text-gradient" },

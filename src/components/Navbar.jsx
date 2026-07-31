@@ -14,9 +14,9 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center gap-2 select-none whitespace-nowrap">
-          <p className="text-white text-[16px] sm:text-[18px] font-bold flex items-center gap-2 leading-tight">
+          <p className="text-white text-[16px] sm:text-[18px] font-display font-bold flex items-center gap-2 leading-tight tracking-tight">
             <span>Fitzherbert</span>
-            <span className="text-secondary font-semibold">| Developer</span>
+            <span className="text-accent font-sans font-semibold text-[13px] sm:text-[14px] tracking-normal">Developer</span>
           </p>
         </div>
         <ul className='list-none hidden md:flex flex-row gap-10 items-center'>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 href={github.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary hover:text-white transition-colors"
+                className="text-secondary hover:text-accent transition-colors"
                 title={`GitHub: ${github.username}`}
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -53,7 +53,7 @@ const Navbar = () => {
               href={socialLinks.linkedin.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-white transition-colors"
+              className="text-secondary hover:text-accent transition-colors"
               title="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ const Navbar = () => {
                 href={github.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary hover:text-white transition-colors"
+                className="text-secondary hover:text-accent transition-colors"
                 title={`GitHub: ${github.username}`}
                 onClick={() => setToggle(false)}
               >
@@ -114,7 +114,7 @@ const Navbar = () => {
               href={socialLinks.linkedin.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-white transition-colors"
+              className="text-secondary hover:text-accent transition-colors"
               title="LinkedIn"
               onClick={() => setToggle(false)}
             >
